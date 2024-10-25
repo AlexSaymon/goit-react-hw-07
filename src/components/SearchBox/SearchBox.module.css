@@ -1,0 +1,12 @@
+.wrapper {
+  margin-left: 40px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.searchBox {
+  width: 50%;
+  padding: 7px;
+}
