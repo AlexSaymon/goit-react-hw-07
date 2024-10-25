@@ -1,6 +1,6 @@
-import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { fetchContacts, deleteContact } from "../../redux/contactsSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchContacts, deleteContact } from "../../redux/contactsOps";
 import Contact from "../Contact/Contact";
 
 const ContactList = () => {
@@ -19,7 +19,7 @@ const ContactList = () => {
   );
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+    <div>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       {filteredContacts.map((contact) => (
